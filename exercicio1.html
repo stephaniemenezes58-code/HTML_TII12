@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Exercico</title>
+</head>
+<body>
+    <h1>Tabela de Produtos:</h1>
+<br>
+ <table border="1">
+        <tr>
+            <th>Produto</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Disponível</th>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td>Doce</td>
+            <td>R$ 10,00</td>
+            <td>Sim</td>
+        </tr>
+        <tr>
+            <td>Sabonete</td>
+            <td>higiene pessoal</td>
+            <td>R$ 5,00</td>
+            <td>Não</td>
+        </tr>
+        <tr>
+            <td>Shampoo e Condicionador</td>
+            <td>higiene pessoal</td>
+            <td>R$ 50,00</td>
+            <td>Não</td>
+        </tr>
+        <tr>
+            <td>Cerveja</td>
+            <td>Bebida</td>
+            <td>R$ 40,00</td>
+            <td>Sim</td>
+        </tr>
+        <tr>
+            <td>Coca-Cola</td>
+            <td>Bebida</td>
+            <td>R$ 10,00</td>
+            <td>Sim</td>
+            </tr>
+    </table>
+    <br>
+    <hr>
+    <p><b>Selecione o produto desejado:</b></p required>
+        <p>
+            <input type="checkbox" id="chocolate" name="Selecione o produto desejado">
+            <label for="chocolate">Chocolate</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="sabonete" name="Selecione o produto desejado">
+            <label for="sabonete">Sabonete</label>
+        </p>
+        <p>
+            <input type="checkbox" id="shampoo e condicionador" name="Selecione o produto desejado">
+            <label for="shampoo e condicionador">Shampoo e Condicionador</label>
+        </p>
+        <p>
+            <input type="checkbox" id="cerveja" name="Selecione o produto desejado">
+            <label for="cerveja">Cerveja</label>
+        </p>
+        <p>
+            <input type="checkbox" id="coca cola" name="Selecione o produto desejado">
+            <label for="coca cola">Cola-Cola</label>
+        </p>
+        <P>
+            <label>Escolha a quantidade dos itens selecionados</label>
+            <input type="number" id="number" name="number" required>
+        </P>
+    <p>
+            <label for="selecione a forma de pagamento">Selecione a forma de pagamento:</label>
+            <select name="selecione a forma de pagamento" id="selecione a forma de pagamento" required>
+                <option value="">Escolha uma opção:</option>
+                <option value="crédito">Credito</option>
+                <option value="débito">Debito</option>
+                <option value="pix">Pix</option>
+            </select>
+        </p>
+        <form action="" method="post" name="">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        </form>
+         <button id="" onclick="">Enviar</button>
+
+</body>
+
+
+</html>
