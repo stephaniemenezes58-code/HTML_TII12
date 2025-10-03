@@ -1,0 +1,66 @@
+/* CSS EXTERNO - para que funcione é necessário fazer o link no HTML.*/ 
+
+h1{
+   background-color: rgba(50, 20, 255, 0.3);
+   padding: 5px;
+   font-family: cursive;
+   text-align: center;
+}
+
+p, li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ a{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: solid black;
+    margin: 30px;
+ }
+
+/* Comportamento de link a ser clicado */
+button:link{
+    color: black;
+}
+/* Comportamento de link depois de ser cliclado */
+button:visited{
+    color: #000;
+    background-color: yellow;
+}
+/* Comportamento de passar sobre */
+button:hover{
+    background-color: violet;
+    color:rgb(214, 1, 72)
+}
+/* Comportamento de link quando está ativo */
+button:active{
+    background-color: grey;
+    color: rgb(60, 4, 112);
+}
+
+/* Trabalhando com pseudo-elementos*/
+p::first-line{
+    color: red;
+}
+p::first-letter{
+    color: blue;
+    font-size: xx-large;
+}
+h3::before {
+    content: url(/IMG/noiva_cadaver.jpg);
+}
+   h3::after {
+    content: url(/IMG/noiva_cadaver.jpg);
+}
+
+/* Este pseudo-elemento é especifico para lista, pois modifica os "bulets" da lista*/
+::marker{
+    color: rgb(112, 221, 10);
+}
+/*Este pseudo-elemento modifica o que o usuário está selecionando */
+::selection{
+    color: rgb(245, 14, 149);
+    background-color: black;
+}
