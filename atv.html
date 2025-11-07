@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let cad;
+        let senha1;
+
+        let loginCad;
+        let senhaCad;
+        function cadastrarUsuario(){
+            cad = prompt("Cadastre seu nome:")
+            senha1 = prompt("Cadastre sua senha:")
+        }
+       
+        
+        function sistemaLogin(){
+            loginCad = prompt("Insira seu nome:")
+            senhaCad = prompt("Insira sua senha:")
+        }
+        let conf;
+        function confirmarCadastro(){
+        conf = confirm("Você confirma o usuario e a senha digitados? Nome: " + cad + "Senha: " + senha1 )
+        }
+        
+        const login = [cad, senha1]
+        cadastrarUsuario();
+        confirmarCadastro();
+        function fluxoLogin(){
+
+            if (conf){
+                sistemaLogin()
+                if(cad == loginCad && senha1 == senhaCad){
+                    alert("Vocês esta cadastrado")
+
+                }else{
+                    alert("Credenciais erradas, logue denovo")
+                    fluxoLogin()
+                }
+            
+            }else{
+            cadastrarUsuario();
+            confirmarCadastro();
+            fluxoLogin()
+            }
+        }
+        fluxoLogin()
+        
+    
+
+    </script>
+</body>
+
+</html>
