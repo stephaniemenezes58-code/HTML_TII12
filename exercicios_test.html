@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    //desafios
+
+    // declare variaveis com os 5 tipos basicos de valor (numero, string
+    // booleano, array(lista) e objecto) 
+
+    let qualquerNumero = 28;
+    let cantorFavorito = "Zayn";
+    let estaFrio = true;
+    let membrosDaOneD = ["Zayn", "Harry", "Louis", "Liam", "Niall"]
+    let fichaMembro = {
+        nome: "Zayn",
+        idade: 32
+    }
+
+
+
+    //explique em suas palavras o que faz o console.log() (usando comentarios)
+
+    // Serve para mostrar as variaveis que declaramos.
+    //
+    //
+    //
+
+    //selecione o segundo item do array abaixo, e o valor sendo
+    //descrito pela chave nome no objeto abaixo, então imprima cada um
+    //no console.log
+
+    let arrayExemplo = [5, 10, 15]
+    console.log(arrayExemplo[1])
+
+
+    let objetoExemplo = {
+        nome: "carlos",
+        idade: 15
+    }
+    console.log(objetoExemplo.nome)
+    console.log(objetoExemplo.idade)
+
+
+    //crie uma função que mostre a frase "Isso é uma função" no console
+    //e chame ela uma vez
+    function atvv() {
+        console.log("Isso é uma função")
+    }
+    atvv()
+
+    //crie uma função chamada 'moradorCasa' que recebe o parametro morador
+    //e chame ela com um exemplo de nome de morador
+
+    let morador = "Zayn"
+    let agregrado ="Louis"
+
+    function moradorCasa(pessoa1, pessoa2, pessoa3){
+    console.log("O morador principal se chama:  " +  pessoa1, "O agregrado se chama: " +  pessoa2, "O vizinho se chama: "+  pessoa3)
+    }
+
+    moradorCasa(morador,agregrado,"jose")
+
+    //crie uma função chamada 'comidaFavorita', com 2 parametros,
+
+    let doce = "Chocolate"
+    let bebida = "Monster"
+
+function comidaFav(comida1, comida2){
+    console.log("meu doce favorito é: " + comida1, "Minha bebida favorita é: " + comida2)
+}
+
+comidaFav(doce,bebida)
+
+
+    //chamados "nomeAluno" e "comidaFavorita", então chame essa função 3 vezes
+    //usando um nome e uma comida favorita diferente para cada chamada da
+    //função
+
+    let aluno = "Galabriel"
+    let aluno2 = "Zayn"
+    let  comidaa1 = "chocolate"
+    let comidaa2 = "lasanha"
+
+    function alunoEcomida (nomeA, comidaA, nomeB, comidaB, nomeC, comidaC){
+        console.log("A comida favorita do " + nomeA, "é " + comidaA )
+        console.log("O " + nomeB, "gosta de comer " + comidaB, "nos finais de semana")
+        console.log('A ' + nomeC, "come muita " + comidaC)
+
+    }
+    alunoEcomida("Ace","torrada","Eteobaldo", "farinha","Camila","salada")
+
+    //Crie uma funcao que receba 2 numeros como parametros,
+    //e então some um numero com o outro.
+
+    let x = 25
+    let y = 30 
+
+    function somarNumbers (numb1, numb2){
+        return numb1+numb2
+    }
+    console.log(somarNumbers(x,y))
+
+    console.log(somarNumbers(500,600))
+
+
+
+</script>
+
+</html>
