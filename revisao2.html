@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
@@ -249,6 +249,10 @@
     // -> Crie 'alturaPessoa'com 1.70
     // Pergunte se a pessoa tem idade adequada E altura adequada
 
+    // let idadePessoa = 18
+    // let alturaPessoa = 1.50
+    // console.log(idadePessoa >= 18 && alturaPessoa >= 1.50 === true)
+
     // =================================================================
     // PARTE 3: A BIFURCAÇÃO (if / else)
     // Até agora o console só dizia "true" ou "false".
@@ -301,6 +305,28 @@
     // Resposta 08:
 
 
+    let horaAtual = 15
+    if(horaAtual < 12){
+        console.log("Bom dia!")
+    }
+else {
+    console.log("não sei oque escrever aqui -_-")
+}
+
+
+  let idadePessoa = 18
+   let alturaPessoa = 1.50
+    if(idadePessoa >=18 && alturaPessoa >= 1.70){
+      console.log("Pode ir")
+  }
+    else {
+     console.log("Não pode ir")
+      }
+
+
+
+
+
 
     // EXERCÍCIO 09: O Semáforo (if e else)
     // Se o sinal está verde, siga. SENÃO (else), pare.
@@ -311,6 +337,15 @@
 
     // Resposta 09:
 
+    let sinalVerde = false;
+
+    if (sinalVerde === true){
+        console.log ("Pode passar")
+    }
+    else{
+        console.log("Pare o carro.")
+    }
+
 
 
     // EXERCÍCIO 10: Estoque da Loja
@@ -320,6 +355,14 @@
     // -> Senão (else), mostre "Produto esgotado".
 
     // Resposta 10:
+
+    let qtdEstoque = 0;
+    if (qtdEstoque > 0){
+        console.log("Produto disponível.")
+    }
+    else{
+        console.log ("Produto esgotado.")
+    }
 
 
 
@@ -332,8 +375,17 @@
     // -> Senão (else): imprima "Adulto".
 
     // Resposta 11:
-
-
+    
+    let idadePessoa2 = 70;
+    if(idadePessoa2 < 18 === true ){
+        console.log("Menor de idade.")
+    }
+    else if(idadePessoa2 > 60 === true){
+        console.log("Idoso.")
+    }
+    else{
+        console.log("Adulto.")
+    }
 
     // =================================================================
     // PARTE 4: DESAFIOS DE NEGÓCIOS (Escala Crescente)
@@ -348,6 +400,18 @@
 
     // Resposta 12:
 
+    let usuario = "admin";
+    let senha = 123;
+
+    if(usuario == "admin" && senha == 123 === true){
+        console.log("Acesso permitido")
+    }
+    else{
+        console.log("Acesso negado.")
+    }
+
+
+
 
 
     // EXERCÍCIO 13: Calculadora de Frete
@@ -360,6 +424,15 @@
 
     // mude o valor da compra para 250 onde ele foi criado para ver como muda o resultado do console.log().
     // Resposta 13:
+
+    let valorCompra = 150;
+    let valorFrete = 20;
+    if (valorCompra >= 200 === true){
+        console.log("Frete grátis.")
+    }
+    else {
+        console.log ("O frete custa: " + valorFrete)
+    }
 
 
 
@@ -375,7 +448,20 @@
 
     // Resposta 14:
 
+    let nomeLimpo = true;
+    let renda = 2;
+    let clienteVip = false;
 
+    if(nomeLimpo === true && renda === 2000 === true){
+        console.log("Empréstimo Aprovado")
+    }
+    else if (clienteVip === true){
+        console.log("Emprestimo aprovado")
+    }
+
+    else {
+        console.log ("Emprestimo negado")
+    }
 
     // EXERCÍCIO 15: O Caixa Eletrônico (Desafio Final)
     // Vamos simular um saque.
@@ -390,6 +476,16 @@
     //         Imprima "Saldo insuficiente".
 
     // Resposta 15:
+
+    let saldoDisponivl = 500;
+    let valorSaque = 200;
+    if (valorSaque <= saldoDisponivl){
+        saldoDisponivl =saldoDisponivl - valorSaque
+        console.log("Novo saldo: " + saldoDisponivl)
+    }
+    else {
+        console.log ("Saldo insuficiente")
+    }
 </script>
 
 </html>
